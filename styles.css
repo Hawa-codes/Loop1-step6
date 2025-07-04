@@ -18,7 +18,7 @@ body {
 .container {
     width: 70%;
     height: 85%;
-    margin: 0 auto;
+    margin: 0;
     overflow: hidden;
     padding: 50px;
     background-color: white;
@@ -27,8 +27,8 @@ body {
 }
 
 h1 {
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 38px;
+    font-weight: 200;
     color: black;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -41,7 +41,7 @@ p {
 
 .social-buttons{
     display: flex;
-    gap: 13px;
+    gap: 14px;  /* gap between the btn*/
     justify-content: center;
     flex-direction: column;
     margin-top: 40px;
@@ -52,23 +52,23 @@ p {
     align-items: center;
     width: 400px;
     background-color: transparent;
-    border: 1px solid #f1f1f1; 
-    gap: 100px; 
+    border: 1px solid #e5dcdc; 
+    gap: 100px; /* gap between the img and word in the btn*/
     padding: 10px 15px;
-    border-radius: 2px;
-    font-size: 11px;
-    font-weight: 500;
-    color: #a19c99;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 600;
+    color: #96908d;
     cursor: pointer;
 }
 
 .btn .IMG{
     width: 20px;
-    height: 20px;
+    height: 24px;
 }
 
 .btn:hover {
-  opacity: 0.9;
+  opacity: 1.0;
   transform: scale(0.98);
   color: black;
 }
@@ -79,29 +79,43 @@ hr {
     height: 1px;
     background-color: #ccc;
     margin-top: 60px;
-    margin-left: 10px;
+    margin-left: -50px;
 }
 
-.social-foot{
-    margin-top: 40px;
+.social-foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 90px;
+  margin-top: 30px;
 }
 
-.social-foot span{
-    gap: 10px;
+.social-foot .email {
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+}
+
+.social-foot a {
+  text-decoration: none;
+  color: #96908d;
+  font-weight: 600;
+  font-size: 9px;
 }
 
 .side.jpg {
     position: relative;
     height: 85%;
     overflow: hidden;
-    margin-top: -100px;
+    margin-top: 30px;
 }
 
 .side-img {
     position: absolute;
-    width: 100px;
-    height: auto;
-    right: 20px;
+    width: 370px;
+    height: 500px;
+    right: 192px;
     font-size: 100px;
     display: block;
+    top: 43px;
 }
